@@ -21,9 +21,13 @@ Please read CONTRIBUTING.MD for my rules and things to keep in mind when contrib
 ## Author(s)
 Project and code was built by me.
 Resources used :
+
 http://soundfile.sapp.org/doc/WaveFormat/
+
 https://docs.microsoft.com/en-us/archive/blogs/dawate/intro-to-audio-programming-part-3-synthesizing-simple-wave-audio-using-c
+
 https://www.youtube.com/watch?v=fp1Snqq9ovw
+
 ## License
 
 This project is licensed under the GPLv3
