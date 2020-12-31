@@ -3,7 +3,7 @@
 SCSP is a simple C#-based synthesizer. The synthesizer has one Oscillator for modulation (no additive synthesis), with volume slider (modifies the host's default playback device volume, unfortunately soundplayer() does not feature volume control in c#), pitch slider to play keys outside the pre-programmed 12 notes, sample rate slider & bits per sample for quality modulation. 
 
 A total of 4-wave forms are playable, with a sine, square, saw and triangle. A fifth "white-noise" wave form which generates random frequency samples is also available. 
-For some reason, I wasn't able to get the sample rate & bits per sample to initialize properly, so they're static for now until I figure it out. 
+For some reason, I wasn't able to get the sample rate & bits per sample labels to initialize properly, so they're static for now until I figure it out. 
 
 ## Installation :
 1. [Download](https://www.mediafire.com/file/du2o0c39umhfdvs/SCSP.zip/file)
