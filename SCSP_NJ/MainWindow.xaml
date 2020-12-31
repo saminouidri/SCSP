@@ -1,0 +1,33 @@
+﻿<Window x:Name="SCSP" x:Class="SCSP_NJ.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SCSP_NJ"
+        mc:Ignorable="d"
+        Title="SCSP" Height="269" Width="448" WindowStartupLocation="CenterOwner"
+        KeyDown="SCSP1_KeyDown" WindowStyle="None" ResizeMode="NoResize" Icon="scsp_icon.jpg">
+    <Grid x:Name="SCSP1" Focusable="True">
+        <Label Content="" HorizontalAlignment="Left" Margin="158,199,0,0" VerticalAlignment="Top">
+            <Label.Effect>
+                <DropShadowEffect Opacity="0.5"/>
+            </Label.Effect>
+        </Label>
+        <Image HorizontalAlignment="Left" Height="269" VerticalAlignment="Top" Width="448" Source="scsp.jpg"/>
+        <Image x:Name="Minimize" HorizontalAlignment="Left" Height="12" Margin="411,0,0,0" VerticalAlignment="Top" Width="18" Source="minimize.jpg" MouseDown="Minimize_MouseDown"/>
+        <Image x:Name="exit" HorizontalAlignment="Left" Height="12" Margin="431,0,0,0" VerticalAlignment="Top" Width="17" Source="exit.jpg" MouseDown="exit_MouseDown"/>
+        <Slider x:Name="AmplitudeSlider" HorizontalAlignment="Left" Margin="26,64,0,0" VerticalAlignment="Top" Width="125" Height="18" Initialized="AmplitudeSlider_Initialized" ValueChanged="AmplitudeSlider_ValueChanged" Maximum="100" SmallChange="1" />
+        <Slider x:Name="PitchSlider" HorizontalAlignment="Left" Margin="26,99,0,0" VerticalAlignment="Top" Width="125" Height="18" Maximum="200" Minimum="-200" ValueChanged="PitchSlider_ValueChanged" SmallChange="1" Initialized="PitchSlider_Initialized"/>
+        <Slider x:Name="SampleRateSlider" HorizontalAlignment="Left" Margin="26,131,0,0" VerticalAlignment="Top" Width="125" Height="18" Maximum="44100" Value="44100" ValueChanged="SampleRateSlider_ValueChanged" Minimum="500" SmallChange="1" Initialized="SampleRateSlider_Initialized"/>
+        <Slider x:Name="BitsPerSampleSlider" HorizontalAlignment="Left" Margin="26,163,0,0" VerticalAlignment="Top" Width="125" Height="18" Maximum="24" Minimum="1" Value="16" ValueChanged="BitsPerSampleSlider_ValueChanged" SmallChange="1" Initialized="BitsPerSampleSlider_Initialized"/>
+        <CheckBox x:Name="SineC" Content="" HorizontalAlignment="Left" Margin="297,67,0,0" VerticalAlignment="Top" Background="#FF4B5166" Width="16" Checked="SineC_Checked"/>
+        <CheckBox x:Name="SquareC" Content="" HorizontalAlignment="Left" Margin="370,67,0,0" VerticalAlignment="Top" Background="#FF4B5166" Width="16" Checked="SquareC_Checked"/>
+        <CheckBox x:Name="SawC" Content="" HorizontalAlignment="Left" Margin="297,104,0,0" VerticalAlignment="Top" Background="#FF4B5166" Width="16" Checked="SawC_Checked"/>
+        <CheckBox x:Name="TriangleC" Content="" HorizontalAlignment="Left" Margin="370,104,0,0" VerticalAlignment="Top" Background="#FF4B5166" Width="16" Checked="TriangleC_Checked"/>
+        <CheckBox x:Name="WN_C" Content="" HorizontalAlignment="Left" Margin="370,140,0,0" VerticalAlignment="Top" Background="#FF4B5166" Width="16" Checked="WN_C_Checked"/>
+        <Label x:Name="Volume" Content="-" HorizontalAlignment="Left" Margin="158,59,0,0" VerticalAlignment="Top" Foreground="White" Initialized="Volume_Initialized"/>
+        <Label x:Name="Pitch" Content="-" HorizontalAlignment="Left" Margin="158,94,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Label Content="1 - 44100" HorizontalAlignment="Left" Margin="158,126,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Label Content="1 - 24" HorizontalAlignment="Left" Margin="158,159,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.342,0.308" Foreground="White"/>
+    </Grid>
+</Window>
