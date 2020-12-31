@@ -6,7 +6,7 @@ A total of 4-wave forms are playable, with a sine, square, saw and triangle. A f
 For some reason, I wasn't able to get the sample rate & bits per sample to initialize properly, so they're static for now until I figure it out. 
 
 ## Installation :
-1. [DOWNLOAD](https://www.mediafire.com/file/du2o0c39umhfdvs/SCSP.zip/file)==
+1. [Download](https://www.mediafire.com/file/du2o0c39umhfdvs/SCSP.zip/file)
 2. run setup.exe
 3. Enjoy!
 
